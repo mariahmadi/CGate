@@ -1,0 +1,31 @@
+{
+  "cli": {
+    "version": ">= 9.0.2",
+    "requireCommit": true
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "ENVIRONMENT": "production",
+        "APP_VARIANT": "release",
+        "CMC_API": "e7d27780-d776-47bd-adf6-37e2e5d6e0af"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },"env": {
+        "ENVIRONMENT": "production",
+        "APP_VARIANT": "release",
+        "CMC_API": "e7d27780-d776-47bd-adf6-37e2e5d6e0af"
+      }
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}
