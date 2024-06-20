@@ -105,7 +105,7 @@ const Crypto: React.FC<StackScreenProps<any>> = ({ navigation }) => {
                                 </Text>
                             </View>
 
-                            <View style={{ flex: 4, width: 135 }} >
+                            <View style={{ flex: 4, width: 145 }} >
                                 <Text style={styles.item}>
                                     {data.name}
                                 </Text>
@@ -190,7 +190,7 @@ const Crypto: React.FC<StackScreenProps<any>> = ({ navigation }) => {
 
                     <View style={{ paddingTop: 20, width: '100%' }}>
                         {api && (<>
-                            <Text style={{ fontSize: 17, fontWeight: 'bold', bottom: 5, color: '#00BFFF' }}>     Rank   Name                       Price                 24h %</Text>
+                            <Text style={{ fontSize: 17, fontWeight: 'bold', bottom: 5, color: '#00BFFF' }}>     Rank   Name                         Price               24h %</Text>
 
                             <FlatList
                                 initialNumToRender={5}

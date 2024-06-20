@@ -50,7 +50,7 @@ function News() {
 
     const Item = ({ data }: { data: NewsModel }) => (
         <>
-            <View style={{ flexDirection: 'row', right: 15 }}>
+            <View style={{ flexDirection: 'row', right: 20 }}>
 
                 <View style={{ paddingLeft: 14, paddingTop: 8, }}>
                     <Pressable onPress={() => Linking.openURL(`${data.link}`)}>
@@ -70,7 +70,7 @@ function News() {
 
                     <View style={{ top: 15 }}>
                         <Pressable onPress={() => Linking.openURL(`${data.link}`)}>
-                            <Text style={{ flex: 1, textTransform: 'capitalize', justifyContent: 'center', fontSize: 16, fontWeight: 'bold', paddingRight: 20 }}>{data.title}  </Text>
+                            <Text style={{ flex: 1, textTransform: 'capitalize', justifyContent: 'center', fontSize: 16, fontWeight: 'bold', paddingRight: 25 }}>{data.title}  </Text>
                         </Pressable>
                     </View>
 
