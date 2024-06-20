@@ -94,24 +94,24 @@ const Crypto: React.FC<StackScreenProps<any>> = ({ navigation }) => {
                         <>
 
                             <Pressable onPress={() => selectCoin(data)}>
-                                <View style={{ paddingBottom: 5, paddingLeft: 5, width: 30 }}>
+                                <View style={{ paddingBottom: 5, paddingLeft: 5, width: 25 }}>
                                     <AntDesign name="star" size={18} color={news?.indexOf(data.id as number) != -1 ? "black" : "lightblue"} />
                                 </View>
                             </Pressable>
 
-                            <View style={{ width: 35 }} >
+                            <View style={{ width: 25 }} >
                                 <Text style={styles.item}>
                                     {data.cmc_rank}
                                 </Text>
                             </View>
 
-                            <View style={{ flex: 4, width: 145 }} >
-                                <Text style={styles.item}>
+                            <View style={{ flex: 4, width: 165 }} >
+                                <Text style={styles.name}>
                                     {data.name}
                                 </Text>
                             </View>
 
-                            <View style={{ flex: 5, width: 110, paddingLeft: 2, }} >
+                            <View style={{ flex: 5, width: 100, paddingLeft: 2 }} >
                                 <Text style={styles.item}>
                                     $ {data.quote.USD.price > 1 ? data.quote.USD.price.toFixed(2) : data.quote.USD.price < 0.01 ? data.quote.USD.price.toFixed(7) : data.quote.USD.price.toFixed(4)}
                                 </Text>
@@ -190,7 +190,7 @@ const Crypto: React.FC<StackScreenProps<any>> = ({ navigation }) => {
 
                     <View style={{ paddingTop: 20, width: '100%' }}>
                         {api && (<>
-                            <Text style={{ fontSize: 17, fontWeight: 'bold', bottom: 5, color: '#00BFFF' }}>     Rank   Name                         Price               24h %</Text>
+                            <Text style={{ fontSize: 15, fontWeight: 'bold', bottom: 5, color: '#00BFFF' }}>     Rank  Name                                Price                   24h %</Text>
 
                             <FlatList
                                 initialNumToRender={5}
@@ -234,6 +234,17 @@ const styles = StyleSheet.create({
         fontSize: 15,
         width: '100%'
     },
+    name: {
+        backgroundColor: "#EBF4FA",
+        borderRadius: 8,
+        color: "black",
+        padding: 2,
+        margin: 2,
+        fontWeight: 'bold',
+        fontSize: 14,
+        width: '100%'
+    },
+
     Up: {
         backgroundColor: "#EBF4FA",
         borderRadius: 8,
