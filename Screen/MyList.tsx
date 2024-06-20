@@ -232,7 +232,7 @@ const MyList: React.FC<StackScreenProps<any>> = ({ navigation }) => {
                     {filtered && user &&
 
                         (<>
-                            {!state.load && <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#00BFFF' }}>Rank Coin              Price                1h %    24h %     7d %</Text>}
+                            {!state.load && <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#00BFFF' }}>Rank Coin             Price                1h %    24h %     7d %</Text>}
                             <FlatList
 
                                 data={filtered}

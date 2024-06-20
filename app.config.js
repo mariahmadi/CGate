@@ -30,7 +30,7 @@ export default {
       "versionCode": 4,
 
       "adaptiveIcon": {
-        "foregroundImage": "./assets/PNG.png",
+        "foregroundImage": "./assets/reba.png",
         "backgroundColor": "#FFFFFF"
       }
     },

@@ -73,7 +73,7 @@ const SignUpScreen: React.FC<StackScreenProps<any>> = ({ navigation }) => {
         </View> :
         <View style={styles.contain}>
           <>
-            {!!value.error && <View style={styles.error}><Text>{value.error}</Text></View>}
+            {value.error && <View style={styles.error}><Text>{value.error}</Text></View>}
 
             <View style={styles.controls}>
               <>
