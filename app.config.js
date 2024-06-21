@@ -6,7 +6,7 @@ export default {
     "slug": "demo",
     "scheme": "myapp",
 
-    "version": "1.0.7",
+    "version": "1.0.8",
     "orientation": "portrait",
     "icon": "./assets/reba.png",
     "splash": {
@@ -30,7 +30,7 @@ export default {
       "versionCode": 4,
 
       "adaptiveIcon": {
-        "foregroundImage": "./assets/reba.png",
+        "foregroundImage": "./assets/PNG.png",
         "backgroundColor": "#FFFFFF"
       }
     },
